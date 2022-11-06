@@ -1,0 +1,83 @@
+#education {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#education .education_wrapper {
+  width: 80%;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#education .education_wrapper .qualifications {
+  width: 100%;
+  min-height: 25vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+#education .education_wrapper .qualifications .qualification {
+  all: initial;
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Varela Round", sans-serif;
+  position: relative;
+  width: 18rem;
+  aspect-ratio: 1/0.7;
+  display: flex;
+  margin-top: 2.5%;
+  color: var(--text_color);
+}
+#education .education_wrapper .qualifications .qualification .pole_wrapper {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+#education .education_wrapper .qualifications .qualification .pole_wrapper .graduate_hat_wrapper {
+  background-color: var(--primary_color);
+  color: var(--text_color);
+  width: 75%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+#education .education_wrapper .qualifications .qualification .pole_wrapper .pole {
+  position: absolute;
+  top: 0%;
+  width: 0.75%;
+  height: 100%;
+  background-color: white;
+  border-radius: 700px;
+}
+#education .education_wrapper .qualifications .education_details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#education .education_wrapper .qualifications .education_details .year {
+  color: var(--text_color);
+  background-color: var(--button_color);
+  width: 5rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 700px;
+  position: relative;
+}
+#education .education_wrapper .qualifications .education_details h2 {
+  top: 10%;
+  font-size: 1.25rem;
+}
+#education .education_wrapper .qualifications .education_details p span {
+  color: var(--primary_color);
+}/*# sourceMappingURL=education_page.css.map */

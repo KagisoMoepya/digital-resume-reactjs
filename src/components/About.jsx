@@ -11,7 +11,7 @@ class About extends Component {
 
           <div className="about_details_wrapper">
             <div className="about_info about_text">
-              <div class="text_details">
+              <div className="text_details">
                 <p>
                   Name: <span>Kagiso Moepya</span>
                 </p>
@@ -43,7 +43,7 @@ class About extends Component {
                   href="./Documents/Resume-Kagiso-Moepya.pdf"
                   download="Kagiso's Resume"
                 >
-                  Download <span class="material-icons-round">download</span>
+                  Download <span className="material-icons-round">download</span>
                 </a>
               </div>
             </div>
