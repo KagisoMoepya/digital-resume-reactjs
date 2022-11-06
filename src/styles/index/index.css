@@ -12,6 +12,10 @@
   --text_color: #e1dfdf;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Raleway", sans-serif;
   font-family: "Roboto", sans-serif;
@@ -21,6 +25,12 @@ body {
 }
 
 #root {
-  position: relative;
+  position: absolute;
+  width: 100vw;
+  min-height: 100vh;
   display: flex;
+}
+
+section {
+  background-color: var(--section_color);
 }/*# sourceMappingURL=index.css.map */

@@ -1,7 +1,7 @@
 nav {
-  background-color: var(--button_color);
+  background-color: var(--nav_color);
   position: sticky;
-  width: min(100%, 20rem);
+  min-width: 20rem;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -38,6 +38,7 @@ nav ul {
   align-items: center;
 }
 nav ul a {
+  background-color: var(--button_color);
   width: 80%;
   height: 4rem;
   display: flex;

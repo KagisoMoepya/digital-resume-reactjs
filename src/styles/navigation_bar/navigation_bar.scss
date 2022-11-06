@@ -1,7 +1,7 @@
 nav {
-  background-color: var(--button_color);
+  background-color: var(--nav_color);
   position: sticky;
-  width: min(100%, 20rem);
+  min-width: 20rem;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -41,6 +41,7 @@ nav {
     align-items: center;
 
     a {
+      background-color: var(--button_color);
       width: 80%;
       height: 4rem;
       display: flex;
@@ -61,7 +62,7 @@ nav {
 }
 
 @media (max-width: 460px) {
-    nav {
-        width: 100%;
-    }
+  nav {
+    width: 100%;
+  }
 }
