@@ -22,8 +22,8 @@ class Home extends Component {
 
           <br />
 
-          <a href="#home">
-            About <span class="material-icons-round">person</span>
+          <a href="#about">
+            About <span className="material-icons-round">person</span>
           </a>
         </div>
       </section>

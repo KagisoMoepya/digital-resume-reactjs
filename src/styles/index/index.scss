@@ -1,37 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Roboto&family=Varela+Round&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Roboto&family=Varela+Round&display=swap");
 
 * {
-    padding: 0%;
-    margin: 0%;
+  padding: 0%;
+  margin: 0%;
 }
 
 :root {
-    --primary_color: #37bcae;
-    --nav_color: #434141;
-    --button_color: #4e4b4b;
-    --section_color: #2c2a2a;
-    --text_color: #e1dfdf;
+  --primary_color: #37bcae;
+  --nav_color: #434141;
+  --button_color: #4e4b4b;
+  --section_color: #2c2a2a;
+  --text_color: #e1dfdf;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Varela Round', sans-serif;
-    color: var(--text_color);
-    cursor: default;
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Varela Round", sans-serif;
+  color: var(--text_color);
+  cursor: default;
+  overflow-x: hidden;
 }
 
 #root {
-    position: absolute;
-    width: 100vw;
-    min-height: 100vh;
-    display: flex;
+  position: absolute;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+}
+
+.sections {
+  display: flex;
+  flex-direction: column;
 }
 
 section {
-    background-color: var(--section_color);
+  background-color: var(--section_color);
+  min-height: 100vh;
+
+  h1 {
+    border-bottom: 2px solid var(--nav_color);
+    text-align: center;
+    font-size: 2.5rem;
+
+    span {
+      color: var(--primary_color);
+    }
+  }
 }

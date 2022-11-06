@@ -1,0 +1,104 @@
+#about {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .about_content {
+    position: relative;
+    width: 90%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+
+    .about_details_wrapper {
+      margin-top: 1rem;
+      width: 100%;
+      flex-grow: 1;
+      display: flex;
+
+      .about_info {
+        width: 100%;
+        flex: 1;
+      }
+
+      .about_info:nth-child(1) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .text_details {
+          margin: 0.5rem;
+          font-weight: bold;
+          min-height: 35rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          span {
+            color: var(--primary_color);
+          }
+
+          a {
+            width: 10rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 3rem;
+            border-radius: 700px;
+            text-decoration: none;
+            color: var(--text_color);
+            background-color: var(--button_color);
+            transition: all 0.3s ease-out;
+
+            span {
+              color: var(--text_color);
+            }
+          }
+
+          a:hover {
+            background-color: var(--primary_color);
+          }
+        }
+      }
+    }
+
+    .about_cards {
+      height: 0;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+      .about_card {
+        width: 12.5rem;
+        height: 7.5rem;
+        background-color: var(--button_color);
+        margin: 0.5rem;
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: bold;
+
+        span {
+          font-size: 1.5rem;
+          color: var(--primary_color);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .about_details_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about_cards {
+    margin: 1.25rem 0 1.25rem 0;
+  }
+}

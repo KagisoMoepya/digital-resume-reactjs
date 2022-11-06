@@ -1,6 +1,8 @@
 nav {
   background-color: var(--nav_color);
   position: sticky;
+  top: 0;
+  left: 0;
   min-width: 20rem;
   height: 100vh;
   display: flex;
@@ -61,8 +63,17 @@ nav {
   }
 }
 
+@media (max-width: 860px) {
+  nav {
+    display: none;
+  }
+}
+
 @media (max-width: 460px) {
   nav {
+    position: fixed;
     width: 100%;
+    z-index: 1;
+    display: none;
   }
 }

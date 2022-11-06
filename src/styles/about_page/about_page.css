@@ -1,0 +1,91 @@
+#about {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about .about_content {
+  position: relative;
+  width: 90%;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+#about .about_content .about_details_wrapper {
+  margin-top: 1rem;
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+}
+#about .about_content .about_details_wrapper .about_info {
+  width: 100%;
+  flex: 1;
+}
+#about .about_content .about_details_wrapper .about_info:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about .about_content .about_details_wrapper .about_info:nth-child(1) .text_details {
+  margin: 0.5rem;
+  font-weight: bold;
+  min-height: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#about .about_content .about_details_wrapper .about_info:nth-child(1) .text_details span {
+  color: var(--primary_color);
+}
+#about .about_content .about_details_wrapper .about_info:nth-child(1) .text_details a {
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  border-radius: 700px;
+  text-decoration: none;
+  color: var(--text_color);
+  background-color: var(--button_color);
+  transition: all 0.3s ease-out;
+}
+#about .about_content .about_details_wrapper .about_info:nth-child(1) .text_details a span {
+  color: var(--text_color);
+}
+#about .about_content .about_details_wrapper .about_info:nth-child(1) .text_details a:hover {
+  background-color: var(--primary_color);
+}
+#about .about_content .about_cards {
+  height: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#about .about_content .about_cards .about_card {
+  width: 12.5rem;
+  height: 7.5rem;
+  background-color: var(--button_color);
+  margin: 0.5rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+#about .about_content .about_cards .about_card span {
+  font-size: 1.5rem;
+  color: var(--primary_color);
+}
+
+@media (max-width: 860px) {
+  .about_details_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .about_cards {
+    margin: 1.25rem 0 1.25rem 0;
+  }
+}/*# sourceMappingURL=about_page.css.map */

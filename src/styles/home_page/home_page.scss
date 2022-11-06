@@ -1,4 +1,5 @@
 #home {
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,6 +13,8 @@
     justify-content: space-evenly;
 
     h1 {
+      border-bottom: 2px solid transparent;
+      text-align: left;
       font-size: 2.25rem;
 
       span {
@@ -32,6 +35,7 @@
       border-radius: 700px;
       text-decoration: none;
       color: var(--text_color);
+      font-weight: bold;
       background-color: var(--button_color);
       transition: all 0.3s ease-out;
     }
