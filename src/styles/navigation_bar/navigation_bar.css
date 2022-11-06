@@ -1,0 +1,61 @@
+nav {
+  background-color: var(--button_color);
+  position: sticky;
+  width: min(100%, 20rem);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+nav .profile_container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1/0.9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav .profile_container .profile_pic {
+  background-image: url(../assets/my_pic.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 45%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 7.5px solid var(--primary_color);
+}
+nav .profile_container .profile_text {
+  text-align: center;
+}
+nav ul {
+  position: relative;
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav ul a {
+  width: 80%;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 700px;
+  text-decoration: none;
+  color: var(--text_color);
+  font-weight: bold;
+  box-shadow: 0 0 20px 2px var(--section_color);
+  transition: all 0.3s ease-out;
+}
+nav ul a:hover {
+  background-color: var(--primary_color);
+}
+
+@media (max-width: 460px) {
+  nav {
+    width: 100%;
+  }
+}/*# sourceMappingURL=navigation_bar.css.map */
