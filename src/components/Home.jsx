@@ -21,9 +21,10 @@ class Home extends Component {
             <br />
             <br />
             I am Interested in working for SovTech because I believe that there
-            is a lot of room for growth available and the company also allows 
-            for young or upcoming developers to explore themselves in their
-            profession through many opportunities that are available...
+            is a lot of room for growth available for young developers and
+            the company allows for upcoming developers to explore themselves
+            in their profession, through many opportunities that are 
+            available...
           </p>
 
           <br />
