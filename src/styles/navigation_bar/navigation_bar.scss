@@ -7,6 +7,8 @@ nav {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  z-index: 2;
 
   .profile_container {
     position: relative;
@@ -16,6 +18,85 @@ nav {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+
+    .settings_wrapper {
+      position: absolute;
+      top: 5%;
+      left: 2.5%;
+      min-width: 75%;
+      height: 5rem;
+      display: flex;
+      z-index: 1;
+      overflow: hidden;
+
+      .settings_icon {
+        min-width: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        button {
+          background-color: transparent;
+          border: none;
+          outline: none;
+
+          span {
+            color: var(--text_color);
+            cursor: pointer;
+            animation: icon_spin 5s ease-out 0s infinite;
+          }
+  
+          @keyframes icon_spin {
+            from {
+              rotate: 0deg;
+            }
+            to {
+              rotate: 360deg;
+            }
+          }
+        }
+      }
+
+      .theme_colors_wrapper {
+        position: relative;
+        bottom: 100%;
+        border-radius: 20px;
+        display: flex;
+        flex: 1;
+        border: 2px solid var(--button_color);
+        background-color: var(--nav_color);
+        transition: all 0.3s ease-out;
+
+        .theme_content {
+          width: 80%;
+          height: 100%;
+          margin: auto;
+          display: flex;
+          flex-direction: column;
+
+          h4 {
+            margin: 2.5% 0 0 0;
+            white-space: nowrap;
+          }
+
+          .theme_colors {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex: 1;
+
+            button {
+              width: 18%;
+              aspect-ratio: 1/1;
+              outline: none;
+              border: none;
+              border-radius: 50%;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
 
     .profile_pic {
       background-image: url(../assets/my_pic.jpg);
@@ -73,7 +154,7 @@ nav {
   nav {
     position: fixed;
     width: 100%;
-    z-index: 1;
-    display: none;
+    display: flex;
+    // display: none;
   }
 }
