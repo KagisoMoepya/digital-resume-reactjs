@@ -2,6 +2,10 @@
 
 The project is a porfolio about myself describing my profession, education and past experience as a developer.
 
+# Project Link
+
+* https://digital-resume-reactjs.vercel.app
+
 # Pre-requisite
 
 * You need to have Nodejs
