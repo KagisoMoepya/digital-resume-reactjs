@@ -43,6 +43,8 @@ nav .profile_container .settings_wrapper .settings_icon button {
 nav .profile_container .settings_wrapper .settings_icon button span {
   color: var(--text_color);
   cursor: pointer;
+}
+nav .profile_container .settings_wrapper .settings_icon button span:hover {
   animation: icon_spin 5s ease-out 0s infinite;
 }
 @keyframes icon_spin {
@@ -130,13 +132,12 @@ nav ul a:hover {
 
 @media (max-width: 860px) {
   nav {
+    position: fixed;
     display: none;
   }
 }
 @media (max-width: 460px) {
   nav {
-    position: fixed;
     width: 100%;
-    display: flex;
   }
 }/*# sourceMappingURL=navigation_bar.css.map */

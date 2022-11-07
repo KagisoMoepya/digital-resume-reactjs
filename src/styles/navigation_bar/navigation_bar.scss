@@ -34,7 +34,7 @@ nav {
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
         button {
           background-color: transparent;
           border: none;
@@ -43,9 +43,12 @@ nav {
           span {
             color: var(--text_color);
             cursor: pointer;
+          }
+
+          span:hover {
             animation: icon_spin 5s ease-out 0s infinite;
           }
-  
+
           @keyframes icon_spin {
             from {
               rotate: 0deg;
@@ -146,15 +149,13 @@ nav {
 
 @media (max-width: 860px) {
   nav {
+    position: fixed;
     display: none;
   }
 }
 
 @media (max-width: 460px) {
   nav {
-    position: fixed;
     width: 100%;
-    display: flex;
-    // display: none;
   }
 }

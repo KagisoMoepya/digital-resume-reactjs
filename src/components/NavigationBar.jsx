@@ -4,14 +4,22 @@ class NavigationBar extends Component {
 
     constructor() {
         super()
-        this.state = { view: false, style: { bottom: '100%' } }
-        this.colors = ['red', 'orange', '#37bcae', 'blue', '#E75480']
-
+        this.colors = ['#DC143C', 'orange', '#37bcae', '#4169E1', '#E75480']
+        this.state = { themeView: false, style: { bottom: '100%' }, primary_color: this.colors[2] }
     }
 
-    showSettings() {
-        if (this.state.view) return this.setState({ view: false, style: { bottom: '100%' } })
-        return this.setState({ view: true, style: { bottom: '0' } })
+    showSettings(state) {
+        console.log(this.props);
+        if (state.themeView) {
+            this.setState({ themeView: false, style: { bottom: '100%' }, primary_color: state.primary_color })
+        } else {
+            this.setState({ themeView: true, style: { bottom: '0' }, primary_color: state.primary_color })
+        }
+    }
+
+    changeTheme(color) {
+        document.documentElement.style.setProperty('--primary_color', color)
+        this.setState({ themeView: this.state.themeView, style: this.state.style, primary_color: color })
     }
 
     render() {
@@ -20,7 +28,7 @@ class NavigationBar extends Component {
                 <div className="profile_container">
                     <div className="settings_wrapper">
                         <div className="settings_icon">
-                            <button onClick={() => this.showSettings()}>
+                            <button onClick={() => this.showSettings(this.state)}>
                                 <span className="material-icons-round">
                                     settings
                                 </span>
@@ -30,7 +38,7 @@ class NavigationBar extends Component {
                             <div className="theme_content">
                                 <h4>Theme Colors</h4>
                                 <div className="theme_colors">
-                                    {this.colors.map(color => <button key={color} style={{ backgroundColor: color }}></button>)}
+                                    {this.colors.map(color => <button key={color} value={color} style={{ backgroundColor: color }} onClick={() => this.changeTheme(color)}></button>)}
                                 </div>
                             </div>
                         </div>

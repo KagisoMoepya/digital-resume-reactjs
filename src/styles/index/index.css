@@ -32,6 +32,35 @@ body {
   display: flex;
 }
 
+#navigation_button {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  width: 2.5rem;
+  aspect-ratio: 1/1;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--button_color);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 3;
+  transition: all 0.3s ease-out;
+}
+#navigation_button span {
+  color: var(--text_color);
+}
+
+@media (max-width: 860px) {
+  #navigation_button {
+    display: flex;
+  }
+}
+#navigation_button:hover {
+  background-color: var(--primary_color);
+}
+
 .sections {
   display: flex;
   flex-direction: column;
