@@ -30,7 +30,7 @@ class About extends Component {
                 </p>
                 <p>
                   Programming Languages:{" "}
-                  <span>Python, Java, Javascript, TypeScript, React, Node-Js, HTML, CSS, SCSS, SQL</span>
+                  <span>Python, Java, Javascript, TypeScript, React, Node-Js, Dart, Flutter, HTML, CSS, SCSS, SQL</span>
                 </p>
                 <p>
                   Version Control: <span>Github & Gitlab</span>
