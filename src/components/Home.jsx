@@ -18,8 +18,8 @@ class Home extends Component {
             aspiring Full Stack Developer. Programming has become a major part
             of my life and in that I have become more eager to venture into
             different challenges within the Tech Field.
-            <br />
-            <br />
+            <br/>
+            <br/>
             I am Interested in working for SovTech because I believe that there
             is a lot of room for growth available for young developers and
             the company allows for upcoming developers to explore themselves
