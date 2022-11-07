@@ -17,7 +17,13 @@ class Home extends Component {
             A Final year Software Development Student at WeThinkCode_ and an
             aspiring Full Stack Developer. Programming has become a major part
             of my life and in that I have become more eager to venture into
-            different challenges within the Tech Field...
+            different challenges within the Tech Field.
+            <br />
+            <br />
+            I am Interested in working for SovTech because I believe that there
+            is a lot of room for growth available and the company also allows 
+            for young or upcoming developers to explore themselves in their
+            profession through many opportunities that are available...
           </p>
 
           <br />

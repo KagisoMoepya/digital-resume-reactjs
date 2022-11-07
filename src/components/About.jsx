@@ -40,7 +40,7 @@ class About extends Component {
                 </p>
 
                 <a
-                  href="./Documents/Resume-Kagiso-Moepya.pdf"
+                  href="src/components/documents/Kagiso's Resume.pdf"
                   download="Kagiso's Resume"
                 >
                   Download <span className="material-icons-round">download</span>
