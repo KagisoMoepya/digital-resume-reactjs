@@ -1,0 +1,202 @@
+#contact {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contact .contact_wrapper {
+  width: 90%;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+#contact .contact_wrapper .contact_content {
+  width: 100%;
+  min-height: 85vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+#contact .contact_wrapper .contact_content .contact_common_wrappers {
+  flex: 1;
+}
+#contact .contact_wrapper .contact_content .contact_form_wrapper {
+  margin-top: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contact .contact_wrapper .contact_content .contact_form_wrapper form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#contact .contact_wrapper .contact_content .contact_form_wrapper form .input_wrapper {
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#contact .contact_wrapper .contact_content .contact_form_wrapper form .input_wrapper input {
+  margin: auto;
+  width: 85%;
+  height: 2.5rem;
+  border-radius: 700px;
+  padding-left: 25px;
+  border: 2px solid var(--button_color);
+  color: var(--text_color);
+  background-color: transparent;
+  outline: none;
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Varela Round", sans-serif;
+  font-size: 16px;
+  transition: border 0.3s ease-out;
+}
+#contact .contact_wrapper .contact_content .contact_form_wrapper form .input_wrapper label {
+  position: relative;
+  left: 10%;
+  bottom: 2rem;
+  width: fit-content;
+  font-size: 1rem;
+  padding: 0 10px 0 10px;
+  color: var(--button_color);
+  cursor: text;
+  background-color: var(--section_color);
+  border-radius: 700px;
+  transition: all 0.2s ease-out;
+}
+#contact .contact_wrapper .contact_content .contact_form_wrapper form .input_wrapper input:focus {
+  border: 2px solid var(--primary_color);
+}
+#contact .contact_wrapper .contact_content .contact_form_wrapper form .input_wrapper input:focus ~ label,
+#contact .contact_wrapper .contact_content .contact_form_wrapper form .input_wrapper input:valid ~ label {
+  color: var(--text_color);
+  bottom: 3.5rem;
+}
+#contact .contact_wrapper .contact_content .contact_form_wrapper form .input_wrapper textarea {
+  width: 87.5%;
+  padding: 5% 0 0 3%;
+  margin: auto;
+  background-color: transparent;
+  border-radius: 30px;
+  border: 2px solid var(--button_color);
+  outline: none;
+  resize: none;
+  color: var(--text_color);
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Varela Round", sans-serif;
+  transition: border 0.3s ease-out;
+}
+#contact .contact_wrapper .contact_content .contact_form_wrapper form .input_wrapper button[type=submit] {
+  width: 7.5rem;
+  height: 2.5rem;
+  border-radius: 700px;
+  outline: none;
+  border: none;
+  background-color: var(--button_color);
+  color: var(--text_color);
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 2% 0% 10% 0%;
+  transition: all 0.2s ease-out;
+}
+#contact .contact_wrapper .contact_content .contact_form_wrapper form .input_wrapper button[type=submit] span {
+  padding-left: 2.5%;
+}
+#contact .contact_wrapper .contact_content .contact_form_wrapper form .input_wrapper button[type=submit]:hover {
+  background-color: var(--primary);
+}
+#contact .contact_wrapper .contact_content .contact_form_wrapper form .input_wrapper:last-child {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  width: 23rem;
+}
+#contact .contact_wrapper .contact_content .contact_form_wrapper form .textarea_wrapper label {
+  bottom: 10rem;
+}
+#contact .contact_wrapper .contact_content .contact_form_wrapper form .textarea_wrapper textarea:focus {
+  border: 2px solid var(--primary_color);
+}
+#contact .contact_wrapper .contact_content .contact_form_wrapper form .textarea_wrapper textarea:focus ~ label,
+#contact .contact_wrapper .contact_content .contact_form_wrapper form .textarea_wrapper textarea:valid ~ label {
+  color: var(--text_color);
+  bottom: 95%;
+}
+#contact .contact_wrapper .contact_content .contact_info_wrapper {
+  margin: 5% 0 0 0;
+  display: flex;
+  align-items: center;
+  color: var(--text_color);
+}
+#contact .contact_wrapper .contact_content .contact_info_wrapper .centered_info_wrapper {
+  width: 25rem;
+}
+#contact .contact_wrapper .contact_content .contact_info_wrapper .centered_info_wrapper h2 {
+  font-size: 1.75rem;
+}
+#contact .contact_wrapper .contact_content .contact_info_wrapper .centered_info_wrapper p {
+  font-size: 1rem;
+}
+#contact .contact_wrapper .contact_content .contact_info_wrapper .centered_info_wrapper p span {
+  translate: 0 0.25rem;
+  color: var(--primary_color);
+}
+#contact .contact_wrapper .contact_content .contact_info_wrapper .centered_info_wrapper {
+  width: 25rem;
+}
+#contact .contact_wrapper .contact_content .contact_info_wrapper .centered_info_wrapper p:nth-of-type(4),
+#contact .contact_wrapper .contact_content .contact_info_wrapper .centered_info_wrapper p:nth-of-type(5) {
+  margin-top: 0.75rem;
+}
+#contact .contact_wrapper .contact_content .contact_info_wrapper .centered_info_wrapper p:nth-of-type(4) span,
+#contact .contact_wrapper .contact_content .contact_info_wrapper .centered_info_wrapper p:nth-of-type(5) span {
+  position: relative;
+  left: 0.25rem;
+}
+#contact .contact_wrapper .contact_content .contact_info_wrapper .centered_info_wrapper p:nth-of-type(4) a,
+#contact .contact_wrapper .contact_content .contact_info_wrapper .centered_info_wrapper p:nth-of-type(5) a {
+  position: relative;
+  left: 0.5rem;
+  top: 0.25rem;
+  text-decoration: none;
+  color: var(--text_color);
+}
+
+@media (max-width: 860px) {
+  #contact {
+    position: relative;
+    top: 2rem;
+  }
+  #contact .contact_wrapper .contact_content {
+    position: relative;
+    top: 2rem;
+  }
+  #contact .contact_wrapper .contact_content .contact_form_wrapper {
+    position: relative;
+    top: 2rem;
+  }
+}
+@media (max-width: 460px) {
+  #contact .contact_wrapper .contact_content .contact_form_wrapper form .input_wrapper {
+    width: 20rem;
+  }
+  #contact .contact_wrapper .contact_content .contact_form_wrapper form .input_wrapper:last-child {
+    width: 18rem;
+  }
+  #contact .contact_wrapper .contact_content .contact_info_wrapper {
+    justify-content: center;
+    align-items: center;
+  }
+  #contact .contact_wrapper .contact_content .contact_info_wrapper .centered_info_wrapper {
+    width: 20rem;
+    margin: 0 0 0 5%;
+  }
+}/*# sourceMappingURL=contact_page.css.map */

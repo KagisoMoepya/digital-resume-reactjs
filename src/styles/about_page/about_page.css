@@ -6,7 +6,7 @@
 }
 #about .about_content {
   position: relative;
-  width: 80%;
+  width: 90%;
   min-height: 90vh;
   display: flex;
   flex-direction: column;
