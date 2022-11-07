@@ -82,4 +82,10 @@
 }
 #education .education_wrapper .qualifications .education_details p span {
   color: var(--primary_color);
+}
+
+@media screen and (max-width: 460px) {
+  #education .education_wrapper .qualifications .qualification {
+    width: 100%;
+  }
 }/*# sourceMappingURL=education_page.css.map */

@@ -38,4 +38,10 @@
 }
 #home .home_details_container a:hover {
   background-color: var(--primary_color);
+}
+
+@media (max-width: 460px) {
+  #home .home_details_container a:hover {
+    background-color: var(--button_color);
+  }
 }/*# sourceMappingURL=home_page.css.map */

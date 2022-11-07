@@ -45,3 +45,13 @@
     }
   }
 }
+
+@media (max-width: 460px) {
+  #home {
+    .home_details_container {
+      a:hover {
+        background-color: var(--button_color);
+      }
+    }
+  }
+}
